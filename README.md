@@ -77,6 +77,7 @@ Disabling unnecessary services
 ```
 sudo systemctl disable avahi-daemon.service
 ```
+### Reboot your PC after settings 
 # Warning
 
 Tested on Nvidia Geforce GTX 1660 SUPER
