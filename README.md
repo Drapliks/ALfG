@@ -29,12 +29,15 @@ sudo pacman -S linux-zen linux-zen-headers
 
 #### CPU:
 
-1.
+1.Install cpupower
 ```
 sudo pacman -S cpupower
 sudo systemctl enable cpupower.service
 ```
-2.In the /etc/default/cpu power file, specify: ```#governor='performance'```
+2.In the ```/etc/default/cpupower``` file, specify: ```#governor='performance'```
+```
+sudo nano /etc/default/cpupower
+```
 
 #### GPU:
 ```
@@ -46,9 +49,34 @@ Installing steam and components:
 ```
 sudo pacman -S steam gamemode lib32-gamemode
 ```
-Optional:
+To install proton-ge use yay or paru
 ```
-sudo systemctl disable bluetooth.service avahi-daemon.service
+yay -S proton-ge-custom-bin
+```
+```
+paru -S proton-ge-custom-bin
+```
+In the steam compatibility settings, select Proton-GE
+### ZRAM:
+1.Install zram-generator:`
+```
+sudo pacman -S zram-generator
+```
+2.Configure the zram-generator:
+```
+sudo nano /etc/systemd/zram-generator.conf
+```
+3.Paste it into the file:
+```
+[zram0]
+zram-size = min(ram / 2, 4096)
+compression-algorithm = zstd
+swap-priority = 100
+```
+### Optional:
+Disabling unnecessary services
+```
+sudo systemctl disable avahi-daemon.service
 ```
 ## AMD
 soon
