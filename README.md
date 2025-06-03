@@ -3,6 +3,7 @@ Arch Linux for Gaming
 # Before installation
 
 # Manual
+for
 ## Nvidia
 ### Install the drivers with the command:
 ```
