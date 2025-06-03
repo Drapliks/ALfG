@@ -1,7 +1,10 @@
 # ALfG
 Arch Linux for Gaming
 # Before installation
-
+Uncomment multilib in ```/etc/pacman.conf```
+```
+sudo nano /etc/pacman.conf
+```
 # Manual
 for
 ## Nvidia
