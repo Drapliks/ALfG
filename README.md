@@ -57,6 +57,7 @@ yay -S proton-ge-custom-bin
 paru -S proton-ge-custom-bin
 ```
 In the steam compatibility settings, select Proton-GE
+In the properties of the steam games, enter: ```gamemoderun %command%```
 ### ZRAM:
 1.Install zram-generator:`
 ```
