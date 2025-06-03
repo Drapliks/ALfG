@@ -1,4 +1,4 @@
-# ALfG
+# ALfG(Nvidia)
 Arch Linux for Gaming
 # Before installation
 Uncomment multilib in ```/etc/pacman.conf```
