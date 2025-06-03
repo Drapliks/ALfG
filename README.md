@@ -50,7 +50,8 @@ Optional:
 ```
 sudo systemctl disable bluetooth.service avahi-daemon.service
 ```
-### Warning
-Tested on Nvidia Geforce GTX 1660 SUPER
 ## AMD
 soon
+# Warning
+### Nvidia: tested on Nvidia Geforce GTX 1660 SUPER
+### AMD
