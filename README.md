@@ -6,8 +6,6 @@ Uncomment multilib in ```/etc/pacman.conf```
 sudo nano /etc/pacman.conf
 ```
 # Manual
-for
-## Nvidia
 ### Install the drivers with the command:
 ```
 sudo pacman -S nvidia nvidia-utils nvidia-settings lib32-nvidia-utils
