@@ -32,7 +32,7 @@ sudo pacman -S linux-zen linux-zen-headers
 sudo pacman -S cpupower
 sudo systemctl enable cpupower.service
 ```
-2.In the ```/etc/default/cpupower``` file, specify: ```#governor='performance'```
+2.In the ```/etc/default/cpupower``` file, specify: ```governor='performance'```
 ```
 sudo nano /etc/default/cpupower
 ```
