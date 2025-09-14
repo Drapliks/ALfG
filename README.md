@@ -10,19 +10,6 @@ sudo nano /etc/pacman.conf
 ```
 sudo pacman -S nvidia nvidia-utils nvidia-settings lib32-nvidia-utils
 ```
-### Enable Nvidia DRM:
-
-1.
-```
-sudo nano /etc/default/grub
-```
-2. Add it to the first lines: ```GRUB_CMDLINE_LINUX_DEFAULT="... nvidia_drm.modeset=1"```
-
-### Installing the Zen Core:
-```
-sudo pacman -S linux-zen linux-zen-headers
-```
-
 ### Power Management:
 
 #### CPU:
